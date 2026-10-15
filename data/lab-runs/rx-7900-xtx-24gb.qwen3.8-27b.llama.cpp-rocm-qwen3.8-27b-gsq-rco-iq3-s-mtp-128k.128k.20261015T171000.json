@@ -1,0 +1,69 @@
+{
+ "recipe": {
+  "model": "qwen3.8-27b",
+  "weights": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF@d562806dbafae37109975e970aae91b43e73b440",
+  "engine": "llama.cpp-rocm-qwen3.8-27b-gsq-rco-iq3-s-mtp-128k@595a97ee3be5",
+  "set": {},
+  "card": "rx-7900-xtx-24gb"
+ },
+ "where": {
+  "on": "owner",
+  "gpu": "AMD Radeon RX 7900 XTX"
+ },
+ "passed": true,
+ "proof": {
+  "at": "2026-10-15",
+  "on": "owner",
+  "gpu": "AMD Radeon RX 7900 XTX",
+  "launch_sha256": "b1e0a738e031013148b8ec6430eceaf8cc71879dd00d540bcc83a09e5d556ac3",
+  "gates": "load chat reasoning tools context speed",
+  "tps": 48.6,
+  "prefill": 515,
+  "served": "qwen3.8-27b"
+ },
+ "evidence": {
+  "ok": {
+   "load": true,
+   "chat": true,
+   "reasoning": true,
+   "tools": true,
+   "context": true,
+   "speed": true
+  },
+  "chat": {
+   "content": "Red, yellow, blue",
+   "finish": "stop"
+  },
+  "reasoning": {
+   "thinking_chars": 44,
+   "content": "391"
+  },
+  "tools": {
+   "call": [
+    {
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\":\"Paris\"}"
+     },
+     "id": "6sH5FRj9tO79InnTVqGuyCQRIpBuF1SI"
+    }
+   ],
+   "reply": "Here's the current weather in Paris: 17C, Overcast.",
+   "finish": "stop",
+   "calls_again": 0,
+   "thinking_chars": 62
+  },
+  "context": {
+   "prompt_tokens": 124800,
+   "seconds": 240.2,
+   "content": "Pass: 128K needle retrieved"
+  },
+  "speed": {
+   "window_s": 30,
+   "tokens_total": 1458,
+   "seconds_total": 30
+  }
+ },
+ "launch_config_sha256": null
+}
