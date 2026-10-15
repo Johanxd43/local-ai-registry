@@ -1,0 +1,20 @@
+{
+  "model": "qwen3.5-9b",
+  "weights": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+  "engine": "llama.cpp-qwen3.5-9b-q4-k-m-64k@9e4536dfc7ec",
+  "set": {},
+  "card": "radeon-890m-48gb",
+  "proof": [
+    {
+      "at": "2026-10-15",
+      "on": "owner",
+      "gpu": "AMD Radeon 890M",
+      "launch_sha256": "710752b350e1fe4415e1cc5754fefe804d4323f760e414293471198c5b8efef3",
+      "gates": "load chat reasoning tools context speed",
+      "tps": 28.4,
+      "prefill": 320,
+      "served": "Qwen3.5-9B-GGUF",
+      "log": "sha256:4918e7c10b7f842d"
+    }
+  ]
+}

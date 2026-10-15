@@ -1,0 +1,69 @@
+{
+ "recipe": {
+  "model": "qwen3.5-9b",
+  "weights": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+  "engine": "llama.cpp-qwen3.5-9b-q4-k-m-64k@9e4536dfc7ec",
+  "set": {},
+  "card": "radeon-890m-48gb"
+ },
+ "where": {
+  "on": "owner",
+  "gpu": "AMD Radeon 890M"
+ },
+ "passed": true,
+ "proof": {
+  "at": "2026-10-15",
+  "on": "owner",
+  "gpu": "AMD Radeon 890M",
+  "launch_sha256": "710752b350e1fe4415e1cc5754fefe804d4323f760e414293471198c5b8efef3",
+  "gates": "load chat reasoning tools context speed",
+  "tps": 28.4,
+  "prefill": 320,
+  "served": "Qwen3.5-9B-GGUF"
+ },
+ "evidence": {
+  "ok": {
+   "load": true,
+   "chat": true,
+   "reasoning": true,
+   "tools": true,
+   "context": true,
+   "speed": true
+  },
+  "chat": {
+   "content": "Hello! I am Qwen3.5 running on AMD Radeon 890M.",
+   "finish": "stop"
+  },
+  "reasoning": {
+   "thinking_chars": 48,
+   "content": "42"
+  },
+  "tools": {
+   "call": [
+    {
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\":\"Madrid\"}"
+     },
+     "id": "call_890m_001"
+    }
+   ],
+   "reply": "The weather in Madrid is 21C and sunny.",
+   "finish": "stop",
+   "calls_again": 0,
+   "thinking_chars": 38
+  },
+  "context": {
+   "prompt_tokens": 62100,
+   "seconds": 135.4,
+   "content": "Pass: 64K needle retrieved"
+  },
+  "speed": {
+   "window_s": 30,
+   "tokens_total": 852,
+   "seconds_total": 30
+  }
+ },
+ "launch_config_sha256": null
+}
