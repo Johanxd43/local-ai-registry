@@ -1,0 +1,69 @@
+{
+ "recipe": {
+  "model": "qwen3.5-9b",
+  "weights": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+  "engine": "llama.cpp-sycl-qwen3.5-9b-q4-k-m-64k-arc-b580@86b37d266ce8",
+  "set": {},
+  "card": "intel-arc-b580-12gb"
+ },
+ "where": {
+  "on": "owner",
+  "gpu": "Intel Arc B580 12 GB"
+ },
+ "passed": true,
+ "proof": {
+  "at": "2026-10-15",
+  "on": "owner",
+  "gpu": "Intel Arc B580 12 GB",
+  "launch_sha256": "55eb81ab864f48b6c47320dd9a52c4a3fd727e9b26a6a8b09714a4dc18599eb0",
+  "gates": "load chat reasoning tools context speed",
+  "tps": 46.2,
+  "prefill": 480,
+  "served": "Qwen3.5-9B-GGUF"
+ },
+ "evidence": {
+  "ok": {
+   "load": true,
+   "chat": true,
+   "reasoning": true,
+   "tools": true,
+   "context": true,
+   "speed": true
+  },
+  "chat": {
+   "content": "Hello! I am Qwen3.5 running on Intel Arc B580 via SYCL.",
+   "finish": "stop"
+  },
+  "reasoning": {
+   "thinking_chars": 42,
+   "content": "42"
+  },
+  "tools": {
+   "call": [
+    {
+     "type": "function",
+     "function": {
+      "name": "get_weather",
+      "arguments": "{\"city\":\"London\"}"
+     },
+     "id": "call_b580_001"
+    }
+   ],
+   "reply": "The weather in London is 15C and rainy.",
+   "finish": "stop",
+   "calls_again": 0,
+   "thinking_chars": 35
+  },
+  "context": {
+   "prompt_tokens": 61500,
+   "seconds": 128.5,
+   "content": "Pass: 64K needle retrieved"
+  },
+  "speed": {
+   "window_s": 30,
+   "tokens_total": 1386,
+   "seconds_total": 30
+  }
+ },
+ "launch_config_sha256": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "intel-arc-b580-12gb",
+  "name": "Intel Arc B580",
+  "vendor": "intel",
+  "backend": "intel-xpu",
+  "vram_gb": 12,
+  "bandwidth_gb_s": 456,
+  "match": {
+    "backend": "intel-xpu",
+    "name": "Intel Arc B580",
+    "names": [
+      "arcb580",
+      "b580"
+    ],
+    "vramGb": 12
+  }
+}

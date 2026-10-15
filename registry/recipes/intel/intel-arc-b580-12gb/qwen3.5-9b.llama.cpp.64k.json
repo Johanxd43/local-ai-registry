@@ -1,0 +1,20 @@
+{
+  "model": "qwen3.5-9b",
+  "weights": "unsloth/Qwen3.5-9B-GGUF@3885219b6810b007914f3a7950a8d1b469d598a5",
+  "engine": "llama.cpp-sycl-qwen3.5-9b-q4-k-m-64k-arc-b580@86b37d266ce8",
+  "set": {},
+  "card": "intel-arc-b580-12gb",
+  "proof": [
+    {
+      "at": "2026-10-15",
+      "on": "owner",
+      "gpu": "Intel Arc B580 12 GB",
+      "launch_sha256": "55eb81ab864f48b6c47320dd9a52c4a3fd727e9b26a6a8b09714a4dc18599eb0",
+      "gates": "load chat reasoning tools context speed",
+      "tps": 46.2,
+      "prefill": 480,
+      "served": "Qwen3.5-9B-GGUF",
+      "log": "sha256:dca6815267609b3d"
+    }
+  ]
+}
