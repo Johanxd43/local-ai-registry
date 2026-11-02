@@ -42,6 +42,7 @@ REG = ROOT / "registry"
 # registry hardware id -> provider GPU names. vast names use underscores for spaces in queries.
 GPUS = {
     "gtx-1080-ti-11gb": {"vast": "GTX 1080 Ti"},
+    "rtx-2080-ti-11gb": {"runpod": ["NVIDIA GeForce RTX 2080 Ti"], "vast": "RTX 2080 Ti"},
     "rtx-3060-12gb": {"runpod": ["NVIDIA GeForce RTX 3060"], "vast": "RTX 3060"},
     "rtx-3060-ti-8gb": {"runpod": ["NVIDIA GeForce RTX 3060 Ti"], "vast": "RTX 3060 Ti"},
     "rtx-4060-8gb": {"runpod": ["NVIDIA GeForce RTX 4060"], "vast": "RTX 4060"},

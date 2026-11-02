@@ -1,0 +1,273 @@
+{
+  "accelerator": {
+    "count": 1,
+    "unit": "GPU"
+  },
+  "accelerator_backend": "nvidia",
+  "aliases": [
+    "rtx 2080 ti",
+    "geforce rtx 2080 ti"
+  ],
+  "captured_at": "2026-11-02",
+  "commercial": {
+    "availability": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "reason": {
+        "code": "legacy-generation-discontinued",
+        "detail": "GeForce 20 series Turing architecture GPU discontinued from active manufacturing."
+      },
+      "state": "discontinued"
+    },
+    "channel_status": "legacy_vendor_catalog",
+    "current_stock": null,
+    "current_street_price": null,
+    "msrp": {
+      "amount": 999,
+      "currency": "USD"
+    },
+    "prices": [
+      {
+        "amount": 999,
+        "as_of": "2018-09-20",
+        "captured_at": "2026-11-02T10:00:00Z",
+        "currency": "USD",
+        "kind": "MSRP",
+        "region": "US",
+        "scope": "manufacturer_launch_price",
+        "source": {
+          "captured_at": "2026-11-02T10:00:00Z",
+          "kind": "vendor",
+          "publisher": "NVIDIA",
+          "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+        },
+        "unit": "one_time"
+      }
+    ]
+  },
+  "compute": {
+    "architecture": "NVIDIA Turing",
+    "cuda_cores": 4352,
+    "graphics_model": "TU102",
+    "rt_cores": 68,
+    "stats": {
+      "fp16": {
+        "dense": {
+          "provenance": {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "sources": [
+              {
+                "captured_at": "2026-11-02T10:00:00Z",
+                "kind": "vendor",
+                "publisher": "NVIDIA",
+                "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+              }
+            ]
+          },
+          "state": "known",
+          "unit": "tflops",
+          "value": 26.9
+        }
+      },
+      "fp32": {
+        "dense": {
+          "provenance": {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "sources": [
+              {
+                "captured_at": "2026-11-02T10:00:00Z",
+                "kind": "vendor",
+                "publisher": "NVIDIA",
+                "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+              }
+            ]
+          },
+          "state": "known",
+          "unit": "tflops",
+          "value": 13.45
+        }
+      },
+      "int8": {
+        "dense": {
+          "provenance": {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "sources": [
+              {
+                "captured_at": "2026-11-02T10:00:00Z",
+                "kind": "vendor",
+                "publisher": "NVIDIA",
+                "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+              }
+            ]
+          },
+          "state": "known",
+          "unit": "tops",
+          "value": 114.0
+        }
+      }
+    },
+    "stream_processors": 4352,
+    "tensor_cores": 544
+  },
+  "facts": {
+    "commercial.availability": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "commercial.msrp": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "compute.architecture": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "compute.cuda_cores": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "compute.rt_cores": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "compute.tensor_cores": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "memory.bandwidth_gb_per_s": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "memory.vram_gb": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    },
+    "memory.vram_type": {
+      "provenance": {
+        "captured_at": "2026-11-02T10:00:00Z",
+        "sources": [
+          {
+            "captured_at": "2026-11-02T10:00:00Z",
+            "kind": "vendor",
+            "publisher": "NVIDIA",
+            "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+          }
+        ]
+      },
+      "state": "known"
+    }
+  },
+  "family": "rtx-2080-ti",
+  "id": "rtx-2080-ti-11gb",
+  "kind": "discrete",
+  "memory": {
+    "bandwidth_gb_per_s": 616,
+    "cpu_memory_gb": null,
+    "vram_gb": 11,
+    "vram_type": "GDDR6"
+  },
+  "name": "GeForce RTX 2080 Ti",
+  "product_names": [],
+  "products": [
+    "rtx-2080-ti"
+  ],
+  "schema_version": "local-ai-registry/v1",
+  "sources": [
+    {
+      "captured_at": "2026-11-02T10:00:00Z",
+      "kind": "vendor",
+      "publisher": "NVIDIA",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+    }
+  ],
+  "vendor": "nvidia"
+}

@@ -4829,6 +4829,95 @@
    ],
    "captured_at": "2026-08-27"
   },
+  "rtx-2080-ti-11gb": {
+   "name": "GeForce RTX 2080 Ti",
+   "vendor": "nvidia",
+   "kind": "discrete",
+   "family": "rtx-2080-ti",
+   "vram_gb": 11,
+   "bandwidth_gb_s": 616,
+   "products": [],
+   "memory": [
+    [
+     "Memory",
+     "11 GB GDDR6"
+    ],
+    [
+     "Bandwidth",
+     "616 GB/s"
+    ]
+   ],
+   "compute": [
+    [
+     "Architecture",
+     "NVIDIA Turing"
+    ],
+    [
+     "Graphics",
+     "TU102"
+    ],
+    [
+     "CUDA cores",
+     "4,352"
+    ],
+    [
+     "Tensor cores",
+     "544"
+    ],
+    [
+     "RT cores",
+     "68"
+    ],
+    [
+     "Stream processors",
+     "4,352"
+    ]
+   ],
+   "tflops": [
+    [
+     "INT8",
+     114.0,
+     null
+    ],
+    [
+     "FP16",
+     26.9,
+     null
+    ],
+    [
+     "FP32",
+     13.45,
+     null
+    ]
+   ],
+   "price": [
+    [
+     "MSRP",
+     "$999"
+    ],
+    [
+     "Availability",
+     "Discontinued"
+    ]
+   ],
+   "listings": [
+    {
+     "what": "MSRP",
+     "price": "$999",
+     "at": "2018-09-20",
+     "publisher": "NVIDIA",
+     "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/"
+    }
+   ],
+   "sources": [
+    {
+     "publisher": "NVIDIA",
+     "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/",
+     "at": "2026-11-02"
+    }
+   ],
+   "captured_at": "2026-11-02"
+  },
   "rtx-3060-12gb": {
    "name": "GeForce RTX 3060",
    "vendor": "nvidia",
